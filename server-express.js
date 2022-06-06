@@ -22,4 +22,10 @@ app.get('/kontakt', function (request, response) {
     response.send('Catch me at maciej.szulia@gmail.com')
 })
 
+// app.get('/parser', function (request, response){
+//     response.render('parser'{
+//         pageTitle: 'pyscript json maker'
+//     })
+// })
+
 app.listen(port)
