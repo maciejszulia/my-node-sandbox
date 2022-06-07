@@ -14,12 +14,12 @@ def blog_post_generator(how_much):
                'Post_Title': random_title_generator.random_title(),
                'index': x}
 
-
+comma = ',' #idk
 filename = 'blog_posts'
 length = 10 #todo: make global var
 blog_posts = blog_post_generator(length)
 with open('%s.json' % filename, 'w') as output:
-    output.write('[')  # to made json file valid according to JSON format
+    output.write('{')
     for blog_post in blog_posts:
         json.dump(blog_post, output)
-    output.write(']')  # to made json file valid according to JSON format
+    output.write('}'+',')
