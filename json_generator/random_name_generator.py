@@ -7,9 +7,9 @@ fake = Faker('pl_PL')
 #     print(f'{fake.first_name()} {fake.last_name()}')
 
 
-def random_name_generator() -> str:
+def random_name() -> str:
     full_name = fake.first_name() + " " + fake.last_name()
     return full_name
 
 
-# print(random_name_generator())
+# print(random_name())
